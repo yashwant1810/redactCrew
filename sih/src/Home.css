@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Space Mono', monospace;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: clamp(3rem, 10vw, 10rem);
+    color: white;
+    padding: 0rem clamp(1rem, 2vw, 3rem);
+    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+    transition: transform 0.3s ease;
+  }
+  
+  h1:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.05); /* Zoom-in effect */
+  }
+  
+  .project-description {
+    margin-top: 60px; /* Increased top margin for more space above the box */
+    color: white;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 40px; /* Increased padding to make the outer box bigger */
+    max-width: 1000px; /* Increased max-width to make the outer box wider */
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+  
+  .description-section {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .description-section:hover {
+    transform: scale(1.05); /* Zoom-in effect */
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .description-section h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .description-section p {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .description-section:hover h2,
+  .description-section:hover p {
+    color: white; /* Ensure the text stays white on hover */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .social-icon,
+  .npm-icon {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover,
+  .npm-icon:hover {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    transform: scale(1.2); /* Zoom-in effect on hover */
+  }

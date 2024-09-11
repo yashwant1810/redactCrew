@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .redaction-page {
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    color: rgb(251, 251, 251);
+  }
+  
+  h1 {
+    font-family: "Space Mono", monospace;
+    font-size: clamp(2rem, 6vw, 6rem);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  h1:hover {
+    transform: scale(1.1); /* Zoom-in effect */
+  }
+  
+  input[type="file"] {
+    margin-top: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    background-color: black; /* Black theme */
+    border: 1px solid white; /* White border */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="file"]:hover {
+    background-color: white; /* Hover to white background */
+    color: black; /* Text turns black on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  button.submit-btn {
+    background-color: black; /* Black theme */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border: 1px solid white; /* White border */
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  button.submit-btn:hover {
+    background-color: white; /* Hover to white background */
+    color: black; /* Text turns black on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+  }
+  
+  button.submit-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+  }
+  
+  .loading-icon {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .fa-spin {
+    animation: spin 1s infinite linear;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .processed-files ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .processed-files li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .download-icon {
+    margin-left: 10px;
+    cursor: pointer;
+    color: white; /* Download icon in white */
+    transition: transform 0.3s ease;
+  }
+  
+  .download-icon:hover {
+    transform: scale(1.2); /* Zoom-in effect on hover */
+  }
+  
+  input[type="file"],
+  button.submit-btn {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
