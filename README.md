@@ -1,6 +1,24 @@
 # redactCrew
 
-Welcome to **redactCrew**—a cutting-edge tool for detecting and redacting Personally Identifiable Information (PII) from your documents and images. This project combines the power of a Flask backend with a React frontend to provide a seamless experience for PII management.
+Welcome to **redactCrew**—a cutting-edge tool for detecting and redacting Personally Identifiable Information (PII) from your documents and images. This project was built for the 2024 Smart India Hackathon Grande Finale under the Ministry of Electronics and Information Technology of India. 
+
+The contributors are - 
+
+[Yashwant Balaji](https://github.com/yashwant1810)
+
+[Rohit Kedar](https://github.com/kedarrohit)
+
+[Hrishikesh Virupakshi](https://github.com/hrishiii27)
+
+[Sai Sathwik Matury](https://github.com/wixk7)
+
+[Jasmine Jose](https://github.com/Jasmineimis)
+
+[Dhayanandhan M](https://github.com/dhayeah7)
+
+
+
+CHECK OUT THE [NPM PACKAGE](https://www.npmjs.com/package/pii-redactor) & THE [PYTHON PACKAGE](https://pypi.org/project/redactCREW/1.0.0/#files) HERE !!!
 
 ## 🚀 Getting Started
 
@@ -10,7 +28,8 @@ The project is neatly divided into two main components:
 
 - **`flask-backend`**: The server-side application responsible for handling file uploads, PII detection, and redaction.
 - **`sih`**: The client-side React application offering an intuitive interface for users to interact with the PII redaction features.
-
+- **`pii-redactor-tool`**: The python package comprising of the scripts running to achieve the functionalities of the project.
+  
 ### Frontend (React)
 
 The frontend provides a modern, dynamic user experience with:
@@ -43,9 +62,6 @@ To streamline integration into your workflow, `redactCrew` also offers an npm pa
 ```bash
 npm i sih_package
 ```
-
-The npm package - https://www.npmjs.com/package/sih_package
-
 
 ## 📦 Installation
 
